@@ -1,0 +1,30 @@
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Bll.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Bll.pdb
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Converters.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Dal.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Dto.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\EntityFramework.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Converters.pdb
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Dal.pdb
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Dal.dll.config
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\Dto.pdb
+C:\Users\hand\Desktop\oman-batzalel\Bll\bin\Debug\EntityFramework.xml
+C:\Users\hand\Desktop\oman-batzalel\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+C:\Users\hand\Desktop\oman-batzalel\Bll\obj\Debug\Bll.csproj.CoreCompileInputs.cache
+C:\Users\hand\Desktop\oman-batzalel\Bll\obj\Debug\Bll.dll
+C:\Users\hand\Desktop\oman-batzalel\Bll\obj\Debug\Bll.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Bll.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Bll.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Converters.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Dal.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Dto.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\EntityFramework.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Converters.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Dal.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Dal.dll.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\Dto.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\bin\Debug\EntityFramework.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\obj\Debug\Bll.csprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\obj\Debug\Bll.csproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\obj\Debug\Bll.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Bll\obj\Debug\Bll.pdb

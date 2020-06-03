@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1e0ea630a4894e0ab8a74caef61a843b" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.College" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Conversation" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ConversationStatus" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Diploma" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="6" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EResource" Width="1.5" PointX="1.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Faculty" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Intersted" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PersonStatus" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PLogging" Width="1.5" PointX="11.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Position" Width="1.5" PointX="3.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Preparatory" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Question" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Repository" Width="1.5" PointX="10.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Resource" Width="1.5" PointX="0.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Task" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Visitors_Day" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VLogging" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Intersted_College" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Conversation_ConversationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Conversation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Conversation_Intersted" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Conversation_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Repository_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Intersted_Diploma" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Preparatory_Diploma" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Resource_EResource" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Intersted_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Preparatory_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Intersted_PersonStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Intersted_Resource" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PLogging_Intersted" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_VLogging_Intersted" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PLogging_Preparatory" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_VLogging_Visitors_Day" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,156 @@
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csc.exe
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csc.exe.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csc.rsp
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csi.exe
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csi.exe.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\csi.rsp
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.AppContext.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Console.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.Compression.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.Pipes.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Claims.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Threading.Thread.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.ValueTuple.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XPath.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\vbc.exe
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\vbc.exe.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\vbc.rsp
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\VBCSCompiler.exe
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\oman-batzalel.dll.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\oman-batzalel.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\oman-batzalel.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Bll.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Dto.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Newtonsoft.Json.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Net.Http.Formatting.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Web.Http.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Web.Http.WebHost.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Dal.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Converters.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\EntityFramework.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Bll.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Dto.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Newtonsoft.Json.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Net.Http.Formatting.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Web.Http.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\System.Web.Http.WebHost.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Dal.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Dal.dll.config
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\Converters.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\EntityFramework.xml
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.csprojResolveAssemblyReference.cache
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.csproj.CoreCompileInputs.cache
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.pdb
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\EntityFramework.SqlServer.dll
+C:\Users\hand\Desktop\oman-batzalel\oman-batzalel\bin\EntityFramework.SqlServer.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.IO.Pipes.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Claims.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Threading.Thread.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\oman-batzalel.dll.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\oman-batzalel.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\oman-batzalel.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Bll.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Dto.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\EntityFramework.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\EntityFramework.SqlServer.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Newtonsoft.Json.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Net.Http.Formatting.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Web.Http.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Web.Http.WebHost.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Dal.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Converters.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Bll.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Dto.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\EntityFramework.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\EntityFramework.SqlServer.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Newtonsoft.Json.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Net.Http.Formatting.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Web.Http.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\System.Web.Http.WebHost.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Dal.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Dal.dll.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\bin\Converters.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.csprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.csproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\oman-batzalel\obj\Debug\oman-batzalel.pdb

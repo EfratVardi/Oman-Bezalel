@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="College">
+          <Key>
+            <PropertyRef Name="IdCollege" />
+          </Key>
+          <Property Name="IdCollege" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameCollege" Type="nvarchar(max)" />
+          <Property Name="Approval" Type="bit" />
+        </EntityType>
+        <EntityType Name="Conversation">
+          <Key>
+            <PropertyRef Name="IdConversation" />
+          </Key>
+          <Property Name="IdConversation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdIntersted" Type="int" />
+          <Property Name="QuestionDate" Type="date" />
+          <Property Name="AnswerDate" Type="date" />
+          <Property Name="Question" Type="text" />
+          <Property Name="Answer" Type="text" />
+          <Property Name="IdEmployee" Type="int" />
+          <Property Name="IdQuestion" Type="int" />
+          <Property Name="IsToRepository" Type="bit" />
+          <Property Name="IdConversationStatus" Type="int" />
+        </EntityType>
+        <EntityType Name="ConversationStatus">
+          <Key>
+            <PropertyRef Name="IdConversationStatus" />
+          </Key>
+          <Property Name="IdConversationStatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameConversationStatus" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Diploma">
+          <Key>
+            <PropertyRef Name="IdDiploma" />
+          </Key>
+          <Property Name="IdDiploma" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameDiploma" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="IdEmployee" />
+          </Key>
+          <Property Name="IdEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstNameEmployee" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastNameEmployee" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdPosition" Type="int" />
+          <Property Name="StatusEmployee" Type="bit" />
+        </EntityType>
+        <EntityType Name="EResource">
+          <Key>
+            <PropertyRef Name="IdEResource" />
+          </Key>
+          <Property Name="IdEResource" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameEResource" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Faculty">
+          <Key>
+            <PropertyRef Name="IdFaculty" />
+          </Key>
+          <Property Name="IdFaculty" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameFaculty" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Intersted">
+          <Key>
+            <PropertyRef Name="IdIntersted" />
+          </Key>
+          <Property Name="IdIntersted" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstNameIntersted" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastNameIntersted" Type="nvarchar" MaxLength="50" />
+          <Property Name="TzIntersted" Type="nvarchar" MaxLength="50" />
+          <Property Name="GmailIntersted" Type="nvarchar" MaxLength="50" />
+          <Property Name="CellIntersted" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdResource" Type="int" />
+          <Property Name="IdFaculty" Type="int" />
+          <Property Name="IdDiploma" Type="int" />
+          <Property Name="IdPersonStatus" Type="int" />
+          <Property Name="IdCollege" Type="int" />
+        </EntityType>
+        <EntityType Name="PersonStatus">
+          <Key>
+            <PropertyRef Name="IdPersonStatus" />
+          </Key>
+          <Property Name="IdPersonStatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamePersonStatus" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PLogging">
+          <Key>
+            <PropertyRef Name="IdPLogging" />
+          </Key>
+          <Property Name="IdPLogging" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPreparatory" Type="int" />
+          <Property Name="IdIntersted" Type="int" />
+          <Property Name="Comment" Type="text" />
+          <Property Name="IsArrival" Type="bit" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="IdPosition" />
+          </Key>
+          <Property Name="IdPosition" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamePosition" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Preparatory">
+          <Key>
+            <PropertyRef Name="IdPreparatory" />
+          </Key>
+          <Property Name="IdPreparatory" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamePreparatory" Type="nvarchar(max)" />
+          <Property Name="IdFaculty" Type="int" />
+          <Property Name="IdDiploma" Type="int" />
+          <Property Name="BeginDate" Type="date" />
+          <Property Name="NumDays" Type="int" />
+          <Property Name="NumHours" Type="int" />
+          <Property Name="Days" Type="nvarchar(max)" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <EntityType Name="Question">
+          <Key>
+            <PropertyRef Name="IdQuestion" />
+          </Key>
+          <Property Name="IdQuestion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameQuestion" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Repository">
+          <Key>
+            <PropertyRef Name="IdRepository" />
+          </Key>
+          <Property Name="IdRepository" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdConversation" Type="int" />
+          <Property Name="IdFaculty" Type="int" />
+          <Property Name="SumPeople" Type="int" />
+        </EntityType>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="IdResource" />
+          </Key>
+          <Property Name="IdResource" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameResource" Type="varchar(max)" />
+          <Property Name="IdEResource" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="IdTask" />
+          </Key>
+          <Property Name="IdTask" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="text" />
+          <Property Name="IsDone" Type="bit" />
+          <Property Name="RemindeTime" Type="date" />
+        </EntityType>
+        <EntityType Name="Visitors'Day">
+          <Key>
+            <PropertyRef Name="IdVisitors'Day" />
+          </Key>
+          <Property Name="IdVisitors'Day" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Place" Type="nvarchar(max)" />
+          <Property Name="Hour" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="VLogging">
+          <Key>
+            <PropertyRef Name="IdVLogging" />
+          </Key>
+          <Property Name="IdVLogging" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdVisitors'Day" Type="int" />
+          <Property Name="IdIntersted" Type="int" />
+          <Property Name="Comment" Type="text" />
+          <Property Name="IsArrival" Type="bit" />
+          <Property Name="Reminder" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Conversation_ConversationStatus">
+          <End Role="ConversationStatus" Type="Self.ConversationStatus" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConversationStatus">
+              <PropertyRef Name="IdConversationStatus" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdConversationStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="IdEmployee" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdEmployee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Question">
+          <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Question">
+              <PropertyRef Name="IdQuestion" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdQuestion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Position">
+          <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Position">
+              <PropertyRef Name="IdPosition" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="IdPosition" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_College">
+          <End Role="College" Type="Self.College" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="College">
+              <PropertyRef Name="IdCollege" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdCollege" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Diploma">
+          <End Role="Diploma" Type="Self.Diploma" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Diploma">
+              <PropertyRef Name="IdDiploma" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdDiploma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Faculty">
+          <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculty">
+              <PropertyRef Name="IdFaculty" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdFaculty" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_PersonStatus">
+          <End Role="PersonStatus" Type="Self.PersonStatus" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonStatus">
+              <PropertyRef Name="IdPersonStatus" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdPersonStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Resource">
+          <End Role="Resource" Type="Self.Resource" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resource">
+              <PropertyRef Name="IdResource" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdResource" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLogging_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="PLogging" Type="Self.PLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="PLogging">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLogging_Preparatory">
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="0..1" />
+          <End Role="PLogging" Type="Self.PLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Preparatory">
+              <PropertyRef Name="IdPreparatory" />
+            </Principal>
+            <Dependent Role="PLogging">
+              <PropertyRef Name="IdPreparatory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Preparatory_Diploma">
+          <End Role="Diploma" Type="Self.Diploma" Multiplicity="0..1" />
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Diploma">
+              <PropertyRef Name="IdDiploma" />
+            </Principal>
+            <Dependent Role="Preparatory">
+              <PropertyRef Name="IdDiploma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Preparatory_Faculty">
+          <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculty">
+              <PropertyRef Name="IdFaculty" />
+            </Principal>
+            <Dependent Role="Preparatory">
+              <PropertyRef Name="IdFaculty" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Repository_Conversation">
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="0..1" />
+          <End Role="Repository" Type="Self.Repository" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conversation">
+              <PropertyRef Name="IdConversation" />
+            </Principal>
+            <Dependent Role="Repository">
+              <PropertyRef Name="IdConversation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resource_EResource">
+          <End Role="EResource" Type="Self.EResource" Multiplicity="0..1" />
+          <End Role="Resource" Type="Self.Resource" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EResource">
+              <PropertyRef Name="IdEResource" />
+            </Principal>
+            <Dependent Role="Resource">
+              <PropertyRef Name="IdEResource" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VLogging_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="VLogging">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VLogging_Visitors'Day">
+          <End Role="Visitors'Day" Type="Self.Visitors'Day" Multiplicity="0..1" />
+          <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Visitors'Day">
+              <PropertyRef Name="IdVisitors'Day" />
+            </Principal>
+            <Dependent Role="VLogging">
+              <PropertyRef Name="IdVisitors'Day" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="College" EntityType="Self.College" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Conversation" EntityType="Self.Conversation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ConversationStatus" EntityType="Self.ConversationStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Diploma" EntityType="Self.Diploma" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EResource" EntityType="Self.EResource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Faculty" EntityType="Self.Faculty" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Intersted" EntityType="Self.Intersted" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PersonStatus" EntityType="Self.PersonStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PLogging" EntityType="Self.PLogging" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Preparatory" EntityType="Self.Preparatory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Question" EntityType="Self.Question" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Repository" EntityType="Self.Repository" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Resource" EntityType="Self.Resource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Visitors'Day" EntityType="Self.Visitors'Day" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VLogging" EntityType="Self.VLogging" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Conversation_ConversationStatus" Association="Self.FK_Conversation_ConversationStatus">
+            <End Role="ConversationStatus" EntitySet="ConversationStatus" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Employee" Association="Self.FK_Conversation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Intersted" Association="Self.FK_Conversation_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Question" Association="Self.FK_Conversation_Question">
+            <End Role="Question" EntitySet="Question" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Position" Association="Self.FK_Employee_Position">
+            <End Role="Position" EntitySet="Position" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_College" Association="Self.FK_Intersted_College">
+            <End Role="College" EntitySet="College" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Diploma" Association="Self.FK_Intersted_Diploma">
+            <End Role="Diploma" EntitySet="Diploma" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Faculty" Association="Self.FK_Intersted_Faculty">
+            <End Role="Faculty" EntitySet="Faculty" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_PersonStatus" Association="Self.FK_Intersted_PersonStatus">
+            <End Role="PersonStatus" EntitySet="PersonStatus" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Resource" Association="Self.FK_Intersted_Resource">
+            <End Role="Resource" EntitySet="Resource" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLogging_Intersted" Association="Self.FK_PLogging_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="PLogging" EntitySet="PLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLogging_Preparatory" Association="Self.FK_PLogging_Preparatory">
+            <End Role="Preparatory" EntitySet="Preparatory" />
+            <End Role="PLogging" EntitySet="PLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Preparatory_Diploma" Association="Self.FK_Preparatory_Diploma">
+            <End Role="Diploma" EntitySet="Diploma" />
+            <End Role="Preparatory" EntitySet="Preparatory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Preparatory_Faculty" Association="Self.FK_Preparatory_Faculty">
+            <End Role="Faculty" EntitySet="Faculty" />
+            <End Role="Preparatory" EntitySet="Preparatory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Repository_Conversation" Association="Self.FK_Repository_Conversation">
+            <End Role="Conversation" EntitySet="Conversation" />
+            <End Role="Repository" EntitySet="Repository" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resource_EResource" Association="Self.FK_Resource_EResource">
+            <End Role="EResource" EntitySet="EResource" />
+            <End Role="Resource" EntitySet="Resource" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VLogging_Intersted" Association="Self.FK_VLogging_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="VLogging" EntitySet="VLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VLogging_Visitors'Day" Association="Self.FK_VLogging_Visitors'Day">
+            <End Role="Visitors'Day" EntitySet="Visitors'Day" />
+            <End Role="VLogging" EntitySet="VLogging" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="College">
+          <Key>
+            <PropertyRef Name="IdCollege" />
+          </Key>
+          <Property Name="IdCollege" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameCollege" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Approval" Type="Boolean" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Intersted_College" FromRole="College" ToRole="Intersted" />
+        </EntityType>
+        <EntityType Name="Conversation">
+          <Key>
+            <PropertyRef Name="IdConversation" />
+          </Key>
+          <Property Name="IdConversation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdIntersted" Type="Int32" />
+          <Property Name="QuestionDate" Type="DateTime" Precision="0" />
+          <Property Name="AnswerDate" Type="DateTime" Precision="0" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IdEmployee" Type="Int32" />
+          <Property Name="IdQuestion" Type="Int32" />
+          <Property Name="IsToRepository" Type="Boolean" />
+          <Property Name="IdConversationStatus" Type="Int32" />
+          <NavigationProperty Name="ConversationStatus" Relationship="Self.FK_Conversation_ConversationStatus" FromRole="Conversation" ToRole="ConversationStatus" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_Conversation_Employee" FromRole="Conversation" ToRole="Employee" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Conversation_Intersted" FromRole="Conversation" ToRole="Intersted" />
+          <NavigationProperty Name="Question1" Relationship="Self.FK_Conversation_Question" FromRole="Conversation" ToRole="Question" />
+          <NavigationProperty Name="Repository" Relationship="Self.FK_Repository_Conversation" FromRole="Conversation" ToRole="Repository" />
+        </EntityType>
+        <EntityType Name="ConversationStatus">
+          <Key>
+            <PropertyRef Name="IdConversationStatus" />
+          </Key>
+          <Property Name="IdConversationStatus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameConversationStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_ConversationStatus" FromRole="ConversationStatus" ToRole="Conversation" />
+        </EntityType>
+        <EntityType Name="Diploma">
+          <Key>
+            <PropertyRef Name="IdDiploma" />
+          </Key>
+          <Property Name="IdDiploma" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameDiploma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Intersted_Diploma" FromRole="Diploma" ToRole="Intersted" />
+          <NavigationProperty Name="Preparatory" Relationship="Self.FK_Preparatory_Diploma" FromRole="Diploma" ToRole="Preparatory" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="IdEmployee" />
+          </Key>
+          <Property Name="IdEmployee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstNameEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastNameEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdPosition" Type="Int32" />
+          <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_Employee" FromRole="Employee" ToRole="Conversation" />
+          <NavigationProperty Name="Position" Relationship="Self.FK_Employee_Position" FromRole="Employee" ToRole="Position" />
+          <Property Name="StatusEmployee" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="EResource">
+          <Key>
+            <PropertyRef Name="IdEResource" />
+          </Key>
+          <Property Name="IdEResource" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameEResource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Resource" Relationship="Self.FK_Resource_EResource" FromRole="EResource" ToRole="Resource" />
+        </EntityType>
+        <EntityType Name="Faculty">
+          <Key>
+            <PropertyRef Name="IdFaculty" />
+          </Key>
+          <Property Name="IdFaculty" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameFaculty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Intersted_Faculty" FromRole="Faculty" ToRole="Intersted" />
+          <NavigationProperty Name="Preparatory" Relationship="Self.FK_Preparatory_Faculty" FromRole="Faculty" ToRole="Preparatory" />
+        </EntityType>
+        <EntityType Name="Intersted">
+          <Key>
+            <PropertyRef Name="IdIntersted" />
+          </Key>
+          <Property Name="IdIntersted" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstNameIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastNameIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TzIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GmailIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CellIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdResource" Type="Int32" />
+          <Property Name="IdFaculty" Type="Int32" />
+          <Property Name="IdDiploma" Type="Int32" />
+          <Property Name="IdPersonStatus" Type="Int32" />
+          <Property Name="IdCollege" Type="Int32" />
+          <NavigationProperty Name="College" Relationship="Self.FK_Intersted_College" FromRole="Intersted" ToRole="College" />
+          <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_Intersted" FromRole="Intersted" ToRole="Conversation" />
+          <NavigationProperty Name="Diploma" Relationship="Self.FK_Intersted_Diploma" FromRole="Intersted" ToRole="Diploma" />
+          <NavigationProperty Name="Faculty" Relationship="Self.FK_Intersted_Faculty" FromRole="Intersted" ToRole="Faculty" />
+          <NavigationProperty Name="PersonStatus" Relationship="Self.FK_Intersted_PersonStatus" FromRole="Intersted" ToRole="PersonStatus" />
+          <NavigationProperty Name="Resource" Relationship="Self.FK_Intersted_Resource" FromRole="Intersted" ToRole="Resource" />
+          <NavigationProperty Name="PLogging" Relationship="Self.FK_PLogging_Intersted" FromRole="Intersted" ToRole="PLogging" />
+          <NavigationProperty Name="VLogging" Relationship="Self.FK_VLogging_Intersted" FromRole="Intersted" ToRole="VLogging" />
+        </EntityType>
+        <EntityType Name="PersonStatus">
+          <Key>
+            <PropertyRef Name="IdPersonStatus" />
+          </Key>
+          <Property Name="IdPersonStatus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamePersonStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Intersted_PersonStatus" FromRole="PersonStatus" ToRole="Intersted" />
+        </EntityType>
+        <EntityType Name="PLogging">
+          <Key>
+            <PropertyRef Name="IdPLogging" />
+          </Key>
+          <Property Name="IdPLogging" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPreparatory" Type="Int32" />
+          <Property Name="IdIntersted" Type="Int32" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsArrival" Type="Boolean" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_PLogging_Intersted" FromRole="PLogging" ToRole="Intersted" />
+          <NavigationProperty Name="Preparatory" Relationship="Self.FK_PLogging_Preparatory" FromRole="PLogging" ToRole="Preparatory" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="IdPosition" />
+          </Key>
+          <Property Name="IdPosition" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamePosition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_Employee_Position" FromRole="Position" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Preparatory">
+          <Key>
+            <PropertyRef Name="IdPreparatory" />
+          </Key>
+          <Property Name="IdPreparatory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamePreparatory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IdFaculty" Type="Int32" />
+          <Property Name="IdDiploma" Type="Int32" />
+          <Property Name="BeginDate" Type="DateTime" Precision="0" />
+          <Property Name="NumDays" Type="Int32" />
+          <Property Name="NumHours" Type="Int32" />
+          <Property Name="Days" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Int32" />
+          <NavigationProperty Name="Diploma" Relationship="Self.FK_Preparatory_Diploma" FromRole="Preparatory" ToRole="Diploma" />
+          <NavigationProperty Name="Faculty" Relationship="Self.FK_Preparatory_Faculty" FromRole="Preparatory" ToRole="Faculty" />
+          <NavigationProperty Name="PLogging" Relationship="Self.FK_PLogging_Preparatory" FromRole="Preparatory" ToRole="PLogging" />
+        </EntityType>
+        <EntityType Name="Question">
+          <Key>
+            <PropertyRef Name="IdQuestion" />
+          </Key>
+          <Property Name="IdQuestion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameQuestion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_Question" FromRole="Question" ToRole="Conversation" />
+        </EntityType>
+        <EntityType Name="Repository">
+          <Key>
+            <PropertyRef Name="IdRepository" />
+          </Key>
+          <Property Name="IdRepository" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdConversation" Type="Int32" />
+          <Property Name="IdFaculty" Type="Int32" />
+          <Property Name="SumPeople" Type="Int32" />
+          <NavigationProperty Name="Conversation" Relationship="Self.FK_Repository_Conversation" FromRole="Repository" ToRole="Conversation" />
+        </EntityType>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="IdResource" />
+          </Key>
+          <Property Name="IdResource" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameResource" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IdEResource" Type="Int32" />
+          <NavigationProperty Name="EResource" Relationship="Self.FK_Resource_EResource" FromRole="Resource" ToRole="EResource" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_Intersted_Resource" FromRole="Resource" ToRole="Intersted" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="IdTask" />
+          </Key>
+          <Property Name="IdTask" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsDone" Type="Boolean" />
+          <Property Name="RemindeTime" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Visitors_Day">
+          <Key>
+            <PropertyRef Name="IdVisitors_Day" />
+          </Key>
+          <Property Name="IdVisitors_Day" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="Place" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Hour" Type="Time" Precision="7" />
+          <NavigationProperty Name="VLogging" Relationship="Self.FK_VLogging_Visitors_Day" FromRole="Visitors_Day" ToRole="VLogging" />
+        </EntityType>
+        <EntityType Name="VLogging">
+          <Key>
+            <PropertyRef Name="IdVLogging" />
+          </Key>
+          <Property Name="IdVLogging" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdVisitors_Day" Type="Int32" />
+          <Property Name="IdIntersted" Type="Int32" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsArrival" Type="Boolean" />
+          <Property Name="Reminder" Type="Boolean" />
+          <NavigationProperty Name="Intersted" Relationship="Self.FK_VLogging_Intersted" FromRole="VLogging" ToRole="Intersted" />
+          <NavigationProperty Name="Visitors_Day" Relationship="Self.FK_VLogging_Visitors_Day" FromRole="VLogging" ToRole="Visitors_Day" />
+        </EntityType>
+        <Association Name="FK_Intersted_College">
+          <End Role="College" Type="Self.College" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="College">
+              <PropertyRef Name="IdCollege" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdCollege" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_ConversationStatus">
+          <End Role="ConversationStatus" Type="Self.ConversationStatus" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConversationStatus">
+              <PropertyRef Name="IdConversationStatus" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdConversationStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="IdEmployee" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdEmployee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conversation_Question">
+          <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Question">
+              <PropertyRef Name="IdQuestion" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="IdQuestion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Repository_Conversation">
+          <End Role="Conversation" Type="Self.Conversation" Multiplicity="0..1" />
+          <End Role="Repository" Type="Self.Repository" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conversation">
+              <PropertyRef Name="IdConversation" />
+            </Principal>
+            <Dependent Role="Repository">
+              <PropertyRef Name="IdConversation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Diploma">
+          <End Role="Diploma" Type="Self.Diploma" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Diploma">
+              <PropertyRef Name="IdDiploma" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdDiploma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Preparatory_Diploma">
+          <End Role="Diploma" Type="Self.Diploma" Multiplicity="0..1" />
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Diploma">
+              <PropertyRef Name="IdDiploma" />
+            </Principal>
+            <Dependent Role="Preparatory">
+              <PropertyRef Name="IdDiploma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Position">
+          <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Position">
+              <PropertyRef Name="IdPosition" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="IdPosition" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resource_EResource">
+          <End Role="EResource" Type="Self.EResource" Multiplicity="0..1" />
+          <End Role="Resource" Type="Self.Resource" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EResource">
+              <PropertyRef Name="IdEResource" />
+            </Principal>
+            <Dependent Role="Resource">
+              <PropertyRef Name="IdEResource" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Faculty">
+          <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculty">
+              <PropertyRef Name="IdFaculty" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdFaculty" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Preparatory_Faculty">
+          <End Role="Faculty" Type="Self.Faculty" Multiplicity="0..1" />
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculty">
+              <PropertyRef Name="IdFaculty" />
+            </Principal>
+            <Dependent Role="Preparatory">
+              <PropertyRef Name="IdFaculty" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_PersonStatus">
+          <End Role="PersonStatus" Type="Self.PersonStatus" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonStatus">
+              <PropertyRef Name="IdPersonStatus" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdPersonStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Intersted_Resource">
+          <End Role="Resource" Type="Self.Resource" Multiplicity="0..1" />
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resource">
+              <PropertyRef Name="IdResource" />
+            </Principal>
+            <Dependent Role="Intersted">
+              <PropertyRef Name="IdResource" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLogging_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="PLogging" Type="Self.PLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="PLogging">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VLogging_Intersted">
+          <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
+          <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Intersted">
+              <PropertyRef Name="IdIntersted" />
+            </Principal>
+            <Dependent Role="VLogging">
+              <PropertyRef Name="IdIntersted" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLogging_Preparatory">
+          <End Role="Preparatory" Type="Self.Preparatory" Multiplicity="0..1" />
+          <End Role="PLogging" Type="Self.PLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Preparatory">
+              <PropertyRef Name="IdPreparatory" />
+            </Principal>
+            <Dependent Role="PLogging">
+              <PropertyRef Name="IdPreparatory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VLogging_Visitors_Day">
+          <End Role="Visitors_Day" Type="Self.Visitors_Day" Multiplicity="0..1" />
+          <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Visitors_Day">
+              <PropertyRef Name="IdVisitors_Day" />
+            </Principal>
+            <Dependent Role="VLogging">
+              <PropertyRef Name="IdVisitors_Day" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="College" EntityType="Self.College" />
+          <EntitySet Name="Conversation" EntityType="Self.Conversation" />
+          <EntitySet Name="ConversationStatus" EntityType="Self.ConversationStatus" />
+          <EntitySet Name="Diploma" EntityType="Self.Diploma" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" />
+          <EntitySet Name="EResource" EntityType="Self.EResource" />
+          <EntitySet Name="Faculty" EntityType="Self.Faculty" />
+          <EntitySet Name="Intersted" EntityType="Self.Intersted" />
+          <EntitySet Name="PersonStatus" EntityType="Self.PersonStatus" />
+          <EntitySet Name="PLogging" EntityType="Self.PLogging" />
+          <EntitySet Name="Position" EntityType="Self.Position" />
+          <EntitySet Name="Preparatory" EntityType="Self.Preparatory" />
+          <EntitySet Name="Question" EntityType="Self.Question" />
+          <EntitySet Name="Repository" EntityType="Self.Repository" />
+          <EntitySet Name="Resource" EntityType="Self.Resource" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Task" EntityType="Self.Task" />
+          <EntitySet Name="Visitors_Day" EntityType="Self.Visitors_Day" />
+          <EntitySet Name="VLogging" EntityType="Self.VLogging" />
+          <AssociationSet Name="FK_Intersted_College" Association="Self.FK_Intersted_College">
+            <End Role="College" EntitySet="College" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_ConversationStatus" Association="Self.FK_Conversation_ConversationStatus">
+            <End Role="ConversationStatus" EntitySet="ConversationStatus" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Employee" Association="Self.FK_Conversation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Intersted" Association="Self.FK_Conversation_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conversation_Question" Association="Self.FK_Conversation_Question">
+            <End Role="Question" EntitySet="Question" />
+            <End Role="Conversation" EntitySet="Conversation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Repository_Conversation" Association="Self.FK_Repository_Conversation">
+            <End Role="Conversation" EntitySet="Conversation" />
+            <End Role="Repository" EntitySet="Repository" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Diploma" Association="Self.FK_Intersted_Diploma">
+            <End Role="Diploma" EntitySet="Diploma" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Preparatory_Diploma" Association="Self.FK_Preparatory_Diploma">
+            <End Role="Diploma" EntitySet="Diploma" />
+            <End Role="Preparatory" EntitySet="Preparatory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Position" Association="Self.FK_Employee_Position">
+            <End Role="Position" EntitySet="Position" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resource_EResource" Association="Self.FK_Resource_EResource">
+            <End Role="EResource" EntitySet="EResource" />
+            <End Role="Resource" EntitySet="Resource" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Faculty" Association="Self.FK_Intersted_Faculty">
+            <End Role="Faculty" EntitySet="Faculty" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Preparatory_Faculty" Association="Self.FK_Preparatory_Faculty">
+            <End Role="Faculty" EntitySet="Faculty" />
+            <End Role="Preparatory" EntitySet="Preparatory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_PersonStatus" Association="Self.FK_Intersted_PersonStatus">
+            <End Role="PersonStatus" EntitySet="PersonStatus" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Intersted_Resource" Association="Self.FK_Intersted_Resource">
+            <End Role="Resource" EntitySet="Resource" />
+            <End Role="Intersted" EntitySet="Intersted" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLogging_Intersted" Association="Self.FK_PLogging_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="PLogging" EntitySet="PLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VLogging_Intersted" Association="Self.FK_VLogging_Intersted">
+            <End Role="Intersted" EntitySet="Intersted" />
+            <End Role="VLogging" EntitySet="VLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLogging_Preparatory" Association="Self.FK_PLogging_Preparatory">
+            <End Role="Preparatory" EntitySet="Preparatory" />
+            <End Role="PLogging" EntitySet="PLogging" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VLogging_Visitors_Day" Association="Self.FK_VLogging_Visitors_Day">
+            <End Role="Visitors_Day" EntitySet="Visitors_Day" />
+            <End Role="VLogging" EntitySet="VLogging" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities1">
+          <EntitySetMapping Name="College">
+            <EntityTypeMapping TypeName="Model.College">
+              <MappingFragment StoreEntitySet="College">
+                <ScalarProperty Name="IdCollege" ColumnName="IdCollege" />
+                <ScalarProperty Name="NameCollege" ColumnName="NameCollege" />
+                <ScalarProperty Name="Approval" ColumnName="Approval" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conversation">
+            <EntityTypeMapping TypeName="Model.Conversation">
+              <MappingFragment StoreEntitySet="Conversation">
+                <ScalarProperty Name="IdConversation" ColumnName="IdConversation" />
+                <ScalarProperty Name="IdIntersted" ColumnName="IdIntersted" />
+                <ScalarProperty Name="QuestionDate" ColumnName="QuestionDate" />
+                <ScalarProperty Name="AnswerDate" ColumnName="AnswerDate" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+                <ScalarProperty Name="IdQuestion" ColumnName="IdQuestion" />
+                <ScalarProperty Name="IsToRepository" ColumnName="IsToRepository" />
+                <ScalarProperty Name="IdConversationStatus" ColumnName="IdConversationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConversationStatus">
+            <EntityTypeMapping TypeName="Model.ConversationStatus">
+              <MappingFragment StoreEntitySet="ConversationStatus">
+                <ScalarProperty Name="IdConversationStatus" ColumnName="IdConversationStatus" />
+                <ScalarProperty Name="NameConversationStatus" ColumnName="NameConversationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Diploma">
+            <EntityTypeMapping TypeName="Model.Diploma">
+              <MappingFragment StoreEntitySet="Diploma">
+                <ScalarProperty Name="IdDiploma" ColumnName="IdDiploma" />
+                <ScalarProperty Name="NameDiploma" ColumnName="NameDiploma" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="StatusEmployee" ColumnName="StatusEmployee" />
+                <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+                <ScalarProperty Name="FirstNameEmployee" ColumnName="FirstNameEmployee" />
+                <ScalarProperty Name="LastNameEmployee" ColumnName="LastNameEmployee" />
+                <ScalarProperty Name="IdPosition" ColumnName="IdPosition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EResource">
+            <EntityTypeMapping TypeName="Model.EResource">
+              <MappingFragment StoreEntitySet="EResource">
+                <ScalarProperty Name="IdEResource" ColumnName="IdEResource" />
+                <ScalarProperty Name="NameEResource" ColumnName="NameEResource" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Faculty">
+            <EntityTypeMapping TypeName="Model.Faculty">
+              <MappingFragment StoreEntitySet="Faculty">
+                <ScalarProperty Name="IdFaculty" ColumnName="IdFaculty" />
+                <ScalarProperty Name="NameFaculty" ColumnName="NameFaculty" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Intersted">
+            <EntityTypeMapping TypeName="Model.Intersted">
+              <MappingFragment StoreEntitySet="Intersted">
+                <ScalarProperty Name="IdIntersted" ColumnName="IdIntersted" />
+                <ScalarProperty Name="FirstNameIntersted" ColumnName="FirstNameIntersted" />
+                <ScalarProperty Name="LastNameIntersted" ColumnName="LastNameIntersted" />
+                <ScalarProperty Name="TzIntersted" ColumnName="TzIntersted" />
+                <ScalarProperty Name="GmailIntersted" ColumnName="GmailIntersted" />
+                <ScalarProperty Name="CellIntersted" ColumnName="CellIntersted" />
+                <ScalarProperty Name="IdResource" ColumnName="IdResource" />
+                <ScalarProperty Name="IdFaculty" ColumnName="IdFaculty" />
+                <ScalarProperty Name="IdDiploma" ColumnName="IdDiploma" />
+                <ScalarProperty Name="IdPersonStatus" ColumnName="IdPersonStatus" />
+                <ScalarProperty Name="IdCollege" ColumnName="IdCollege" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonStatus">
+            <EntityTypeMapping TypeName="Model.PersonStatus">
+              <MappingFragment StoreEntitySet="PersonStatus">
+                <ScalarProperty Name="IdPersonStatus" ColumnName="IdPersonStatus" />
+                <ScalarProperty Name="NamePersonStatus" ColumnName="NamePersonStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLogging">
+            <EntityTypeMapping TypeName="Model.PLogging">
+              <MappingFragment StoreEntitySet="PLogging">
+                <ScalarProperty Name="IdPLogging" ColumnName="IdPLogging" />
+                <ScalarProperty Name="IdPreparatory" ColumnName="IdPreparatory" />
+                <ScalarProperty Name="IdIntersted" ColumnName="IdIntersted" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="IsArrival" ColumnName="IsArrival" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Position">
+            <EntityTypeMapping TypeName="Model.Position">
+              <MappingFragment StoreEntitySet="Position">
+                <ScalarProperty Name="IdPosition" ColumnName="IdPosition" />
+                <ScalarProperty Name="NamePosition" ColumnName="NamePosition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Preparatory">
+            <EntityTypeMapping TypeName="Model.Preparatory">
+              <MappingFragment StoreEntitySet="Preparatory">
+                <ScalarProperty Name="IdPreparatory" ColumnName="IdPreparatory" />
+                <ScalarProperty Name="NamePreparatory" ColumnName="NamePreparatory" />
+                <ScalarProperty Name="IdFaculty" ColumnName="IdFaculty" />
+                <ScalarProperty Name="IdDiploma" ColumnName="IdDiploma" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="NumDays" ColumnName="NumDays" />
+                <ScalarProperty Name="NumHours" ColumnName="NumHours" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Question">
+            <EntityTypeMapping TypeName="Model.Question">
+              <MappingFragment StoreEntitySet="Question">
+                <ScalarProperty Name="IdQuestion" ColumnName="IdQuestion" />
+                <ScalarProperty Name="NameQuestion" ColumnName="NameQuestion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Repository">
+            <EntityTypeMapping TypeName="Model.Repository">
+              <MappingFragment StoreEntitySet="Repository">
+                <ScalarProperty Name="IdRepository" ColumnName="IdRepository" />
+                <ScalarProperty Name="IdConversation" ColumnName="IdConversation" />
+                <ScalarProperty Name="IdFaculty" ColumnName="IdFaculty" />
+                <ScalarProperty Name="SumPeople" ColumnName="SumPeople" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Resource">
+            <EntityTypeMapping TypeName="Model.Resource">
+              <MappingFragment StoreEntitySet="Resource">
+                <ScalarProperty Name="IdResource" ColumnName="IdResource" />
+                <ScalarProperty Name="NameResource" ColumnName="NameResource" />
+                <ScalarProperty Name="IdEResource" ColumnName="IdEResource" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Model.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Task">
+            <EntityTypeMapping TypeName="Model.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="IdTask" ColumnName="IdTask" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsDone" ColumnName="IsDone" />
+                <ScalarProperty Name="RemindeTime" ColumnName="RemindeTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Visitors_Day">
+            <EntityTypeMapping TypeName="Model.Visitors_Day">
+              <MappingFragment StoreEntitySet="Visitors'Day">
+                <ScalarProperty Name="IdVisitors_Day" ColumnName="IdVisitors'Day" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Place" ColumnName="Place" />
+                <ScalarProperty Name="Hour" ColumnName="Hour" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VLogging">
+            <EntityTypeMapping TypeName="Model.VLogging">
+              <MappingFragment StoreEntitySet="VLogging">
+                <ScalarProperty Name="IdVLogging" ColumnName="IdVLogging" />
+                <ScalarProperty Name="IdVisitors_Day" ColumnName="IdVisitors'Day" />
+                <ScalarProperty Name="IdIntersted" ColumnName="IdIntersted" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="IsArrival" ColumnName="IsArrival" />
+                <ScalarProperty Name="Reminder" ColumnName="Reminder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

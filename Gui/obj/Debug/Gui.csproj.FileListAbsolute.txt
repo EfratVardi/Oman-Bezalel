@@ -1,0 +1,9 @@
+C:\Users\hand\Desktop\oman-batzalel\Gui\bin\Debug\Gui.exe.config
+C:\Users\hand\Desktop\oman-batzalel\Gui\bin\Debug\Gui.exe
+C:\Users\hand\Desktop\oman-batzalel\Gui\bin\Debug\Gui.pdb
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.csprojResolveAssemblyReference.cache
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.Properties.Resources.resources
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.csproj.GenerateResource.Cache
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.csproj.CoreCompileInputs.cache
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.exe
+C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.pdb

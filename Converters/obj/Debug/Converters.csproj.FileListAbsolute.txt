@@ -1,0 +1,26 @@
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Converters.dll
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Converters.pdb
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Dal.dll
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Dto.dll
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\EntityFramework.dll
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Dal.pdb
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Dal.dll.config
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\Dto.pdb
+C:\Users\hand\Desktop\oman-batzalel\Converters\bin\Debug\EntityFramework.xml
+C:\Users\hand\Desktop\oman-batzalel\Converters\obj\Debug\Converters.csprojResolveAssemblyReference.cache
+C:\Users\hand\Desktop\oman-batzalel\Converters\obj\Debug\Converters.csproj.CoreCompileInputs.cache
+C:\Users\hand\Desktop\oman-batzalel\Converters\obj\Debug\Converters.dll
+C:\Users\hand\Desktop\oman-batzalel\Converters\obj\Debug\Converters.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Converters.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Converters.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Dal.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Dto.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\EntityFramework.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Dal.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Dal.dll.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\Dto.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\bin\Debug\EntityFramework.xml
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\obj\Debug\Converters.csprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\obj\Debug\Converters.csproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\obj\Debug\Converters.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Converters\obj\Debug\Converters.pdb

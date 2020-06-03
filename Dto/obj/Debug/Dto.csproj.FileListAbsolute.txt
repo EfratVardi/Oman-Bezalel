@@ -1,0 +1,11 @@
+C:\Users\hand\Desktop\oman-batzalel\Dto\bin\Debug\Dto.dll
+C:\Users\hand\Desktop\oman-batzalel\Dto\bin\Debug\Dto.pdb
+C:\Users\hand\Desktop\oman-batzalel\Dto\obj\Debug\Dto.csprojResolveAssemblyReference.cache
+C:\Users\hand\Desktop\oman-batzalel\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\hand\Desktop\oman-batzalel\Dto\obj\Debug\Dto.dll
+C:\Users\hand\Desktop\oman-batzalel\Dto\obj\Debug\Dto.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Dto\bin\Debug\Dto.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Dto\bin\Debug\Dto.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Dto\obj\Debug\Dto.dll
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Dto\obj\Debug\Dto.pdb
