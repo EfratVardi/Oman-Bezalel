@@ -15,6 +15,7 @@ namespace Gui
         public Form1()
         {
             InitializeComponent();
+            string x = "";
         }
     }
 }
