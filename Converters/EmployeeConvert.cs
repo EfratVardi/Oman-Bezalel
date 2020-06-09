@@ -8,7 +8,7 @@ using Dal;
 
 namespace Converters
 {
-            public class EmployeeConverters
+     public class EmployeeConverters
         {
             //ממירה מחלקה שלנו לשל מיקרוסופט
             public static Employee ToDalEmployee(EmployeeDto e)
@@ -18,6 +18,7 @@ namespace Converters
                 en.IdEmployee = e.IdEmployee;
                 en.IdPosition = e.IdPosition;
                 en.LastNameEmployee = e.LastNameEmployee;
+                en.UserId = e.UserId;
                 return en;
 
             }
@@ -29,6 +30,7 @@ namespace Converters
                 en.IdEmployee = e.IdEmployee;
                 en.IdPosition = e.IdPosition;
                 en.LastNameEmployee = e.LastNameEmployee;
+                en.UserId = e.UserId;
                 return en;
             }
 

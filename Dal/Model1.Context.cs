@@ -13,10 +13,10 @@ namespace Dal
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities1 : DbContext
+    public partial class Entities2 : DbContext
     {
-        public Entities1()
-            : base("name=Entities1")
+        public Entities2()
+            : base("name=Entities2")
         {
         }
     
@@ -44,5 +44,6 @@ namespace Dal
         public virtual DbSet<Task> Task { get; set; }
         public virtual DbSet<Visitors_Day> Visitors_Day { get; set; }
         public virtual DbSet<VLogging> VLogging { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

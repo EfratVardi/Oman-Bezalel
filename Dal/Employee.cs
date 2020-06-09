@@ -25,9 +25,11 @@ namespace Dal
         public string LastNameEmployee { get; set; }
         public Nullable<int> IdPosition { get; set; }
         public Nullable<bool> StatusEmployee { get; set; }
+        public Nullable<int> UserId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Conversation> Conversation { get; set; }
         public virtual Position Position { get; set; }
+        public virtual User User { get; set; }
     }
 }

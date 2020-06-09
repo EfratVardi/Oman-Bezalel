@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="EmployeeDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InterstedDto.cs" />
+    <Compile Include="UserDto.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

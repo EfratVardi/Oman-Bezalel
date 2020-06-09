@@ -46,6 +46,7 @@
     <Property Name="LastNameEmployee" Type="nvarchar" MaxLength="50" />
     <Property Name="IdPosition" Type="int" />
     <Property Name="StatusEmployee" Type="bit" />
+    <Property Name="UserId" Type="int" />
   </EntityType>
   <EntityType Name="EResource">
     <Key>
@@ -68,14 +69,15 @@
     <Property Name="IdIntersted" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FirstNameIntersted" Type="nvarchar" MaxLength="50" />
     <Property Name="LastNameIntersted" Type="nvarchar" MaxLength="50" />
-    <Property Name="TzIntersted" Type="nvarchar" MaxLength="50" />
+    <Property Name="TzInterested" Type="nvarchar" MaxLength="50" />
     <Property Name="GmailIntersted" Type="nvarchar" MaxLength="50" />
-    <Property Name="CellIntersted" Type="nvarchar" MaxLength="50" />
+    <Property Name="CellInterested" Type="nvarchar" MaxLength="50" />
     <Property Name="IdResource" Type="int" />
     <Property Name="IdFaculty" Type="int" />
     <Property Name="IdDiploma" Type="int" />
     <Property Name="IdPersonStatus" Type="int" />
     <Property Name="IdCollege" Type="int" />
+    <Property Name="IdUser" Type="int" />
   </EntityType>
   <EntityType Name="PersonStatus">
     <Key>
@@ -157,6 +159,16 @@
     <Property Name="Description" Type="text" />
     <Property Name="IsDone" Type="bit" />
     <Property Name="RemindeTime" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'oman-bezalel.dbo.User' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Visitors'Day">
     <Key>
@@ -370,6 +382,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_User_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IdEmployee" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Intersted">
+    <End Role="Intersted" Type="Self.Intersted" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Intersted">
+        <PropertyRef Name="IdIntersted" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_VLogging_Intersted">
     <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
     <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
@@ -414,6 +450,13 @@
     <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Visitors'Day" EntityType="Self.Visitors'Day" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="VLogging" EntityType="Self.VLogging" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [User].[UserId] AS [UserId], 
+    [User].[UserName] AS [UserName], 
+    [User].[Password] AS [Password]
+    FROM [dbo].[User] AS [User]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_Conversation_ConversationStatus" Association="Self.FK_Conversation_ConversationStatus">
       <End Role="ConversationStatus" EntitySet="ConversationStatus" />
       <End Role="Conversation" EntitySet="Conversation" />
@@ -477,6 +520,14 @@
     <AssociationSet Name="FK_Resource_EResource" Association="Self.FK_Resource_EResource">
       <End Role="EResource" EntitySet="EResource" />
       <End Role="Resource" EntitySet="Resource" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Employee" Association="Self.FK_User_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Intersted" Association="Self.FK_User_Intersted">
+      <End Role="Intersted" EntitySet="Intersted" />
+      <End Role="User" EntitySet="User" />
     </AssociationSet>
     <AssociationSet Name="FK_VLogging_Intersted" Association="Self.FK_VLogging_Intersted">
       <End Role="Intersted" EntitySet="Intersted" />

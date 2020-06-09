@@ -54,9 +54,11 @@
     <Property Name="FirstNameEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="LastNameEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IdPosition" Type="Int32" />
+    <Property Name="StatusEmployee" Type="Boolean" />
+    <Property Name="UserId" Type="Int32" />
     <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_Employee" FromRole="Employee" ToRole="Conversation" />
     <NavigationProperty Name="Position" Relationship="Self.FK_Employee_Position" FromRole="Employee" ToRole="Position" />
-    <Property Name="StatusEmployee" Type="Boolean" />
+    <NavigationProperty Name="User" Relationship="Self.FK_User_Employee" FromRole="Employee" ToRole="User" />
   </EntityType>
   <EntityType Name="EResource">
     <Key>
@@ -82,14 +84,15 @@
     <Property Name="IdIntersted" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="FirstNameIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="LastNameIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="TzIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TzInterested" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GmailIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="CellIntersted" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CellInterested" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IdResource" Type="Int32" />
     <Property Name="IdFaculty" Type="Int32" />
     <Property Name="IdDiploma" Type="Int32" />
     <Property Name="IdPersonStatus" Type="Int32" />
     <Property Name="IdCollege" Type="Int32" />
+    <Property Name="IdUser" Type="Int32" />
     <NavigationProperty Name="College" Relationship="Self.FK_Intersted_College" FromRole="Intersted" ToRole="College" />
     <NavigationProperty Name="Conversation" Relationship="Self.FK_Conversation_Intersted" FromRole="Intersted" ToRole="Conversation" />
     <NavigationProperty Name="Diploma" Relationship="Self.FK_Intersted_Diploma" FromRole="Intersted" ToRole="Diploma" />
@@ -97,6 +100,7 @@
     <NavigationProperty Name="PersonStatus" Relationship="Self.FK_Intersted_PersonStatus" FromRole="Intersted" ToRole="PersonStatus" />
     <NavigationProperty Name="Resource" Relationship="Self.FK_Intersted_Resource" FromRole="Intersted" ToRole="Resource" />
     <NavigationProperty Name="PLogging" Relationship="Self.FK_PLogging_Intersted" FromRole="Intersted" ToRole="PLogging" />
+    <NavigationProperty Name="User" Relationship="Self.FK_User_Intersted" FromRole="Intersted" ToRole="User" />
     <NavigationProperty Name="VLogging" Relationship="Self.FK_VLogging_Intersted" FromRole="Intersted" ToRole="VLogging" />
   </EntityType>
   <EntityType Name="PersonStatus">
@@ -214,6 +218,16 @@
     <NavigationProperty Name="Intersted" Relationship="Self.FK_VLogging_Intersted" FromRole="VLogging" ToRole="Intersted" />
     <NavigationProperty Name="Visitors_Day" Relationship="Self.FK_VLogging_Visitors_Day" FromRole="VLogging" ToRole="Visitors_Day" />
   </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_User_Employee" FromRole="User" ToRole="Employee" />
+    <NavigationProperty Name="Intersted" Relationship="Self.FK_User_Intersted" FromRole="User" ToRole="Intersted" />
+  </EntityType>
   <Association Name="FK_Intersted_College">
     <End Role="College" Type="Self.College" Multiplicity="0..1" />
     <End Role="Intersted" Type="Self.Intersted" Multiplicity="*" />
@@ -322,6 +336,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_User_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IdEmployee" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Resource_EResource">
     <End Role="EResource" Type="Self.EResource" Multiplicity="0..1" />
     <End Role="Resource" Type="Self.Resource" Multiplicity="*" />
@@ -394,6 +420,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_User_Intersted">
+    <End Role="Intersted" Type="Self.Intersted" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Intersted">
+        <PropertyRef Name="IdIntersted" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_VLogging_Intersted">
     <End Role="Intersted" Type="Self.Intersted" Multiplicity="0..1" />
     <End Role="VLogging" Type="Self.VLogging" Multiplicity="*" />
@@ -430,7 +468,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="Entities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="College" EntityType="Self.College" />
     <EntitySet Name="Conversation" EntityType="Self.Conversation" />
     <EntitySet Name="ConversationStatus" EntityType="Self.ConversationStatus" />
@@ -450,6 +488,7 @@
     <EntitySet Name="Task" EntityType="Self.Task" />
     <EntitySet Name="Visitors_Day" EntityType="Self.Visitors_Day" />
     <EntitySet Name="VLogging" EntityType="Self.VLogging" />
+    <EntitySet Name="User" EntityType="Self.User" />
     <AssociationSet Name="FK_Intersted_College" Association="Self.FK_Intersted_College">
       <End Role="College" EntitySet="College" />
       <End Role="Intersted" EntitySet="Intersted" />
@@ -486,6 +525,10 @@
       <End Role="Position" EntitySet="Position" />
       <End Role="Employee" EntitySet="Employee" />
     </AssociationSet>
+    <AssociationSet Name="FK_User_Employee" Association="Self.FK_User_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
     <AssociationSet Name="FK_Resource_EResource" Association="Self.FK_Resource_EResource">
       <End Role="EResource" EntitySet="EResource" />
       <End Role="Resource" EntitySet="Resource" />
@@ -509,6 +552,10 @@
     <AssociationSet Name="FK_PLogging_Intersted" Association="Self.FK_PLogging_Intersted">
       <End Role="Intersted" EntitySet="Intersted" />
       <End Role="PLogging" EntitySet="PLogging" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Intersted" Association="Self.FK_User_Intersted">
+      <End Role="Intersted" EntitySet="Intersted" />
+      <End Role="User" EntitySet="User" />
     </AssociationSet>
     <AssociationSet Name="FK_VLogging_Intersted" Association="Self.FK_VLogging_Intersted">
       <End Role="Intersted" EntitySet="Intersted" />

@@ -41,7 +41,6 @@ namespace oman_batzalel.Controllers
         {
             
             EmployeeBll.AddEmployee(e);
-
             return Ok();
 
 

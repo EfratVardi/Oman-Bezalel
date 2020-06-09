@@ -10,7 +10,7 @@ namespace Dal
     {
         public static List<Employee> GetAllEmployees()
         {
-            using (Entities1 db = new Entities1())
+            using (Entities2 db = new Entities2())
             {
                 return db.Employee.ToList();
             }
@@ -18,7 +18,7 @@ namespace Dal
 
         public static void DeleteEmployee(int IdEmployee)
         {
-            using (Entities1 db = new Entities1())
+            using (Entities2 db = new Entities2())
             {
                 Employee e = db.Employee.Find(IdEmployee);
                 try
@@ -37,7 +37,7 @@ namespace Dal
         }
             public static void AddEmployee(Employee e)
             {
-                using (Entities1 db = new Entities1())
+                using (Entities2 db = new Entities2())
                 {
 
                 db.Employee.Add(e);
@@ -46,7 +46,7 @@ namespace Dal
             }
         public static void UpdatEmployee(int id, Employee e)
         {
-            using (Entities1 db = new Entities1())
+            using (Entities2 db = new Entities2())
             {
 
                Employee em = db.Employee.Find(id);
@@ -55,14 +55,15 @@ namespace Dal
                     em.IdPosition = e.IdPosition;
                     em.LastNameEmployee = e.LastNameEmployee;
                     em.FirstNameEmployee = e.FirstNameEmployee;
-                    em.Position = e.Position;
+                    em.IdPosition = e.IdPosition;
                     em.StatusEmployee = e.StatusEmployee;
                     db.SaveChanges();
                 }
                 
                
             }
-        }
+        } 
+     
 
     }
 }

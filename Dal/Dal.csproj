@@ -74,6 +74,7 @@
     <Compile Include="Intersted.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="InterstedDal.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -117,6 +118,10 @@
     <Compile Include="Task.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDal.cs" />
     <Compile Include="Visitors_Day.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

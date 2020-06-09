@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities1">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities2">
     <EntitySetMapping Name="College">
       <EntityTypeMapping TypeName="Model.College">
         <MappingFragment StoreEntitySet="College">
@@ -45,11 +45,12 @@
     <EntitySetMapping Name="Employee">
       <EntityTypeMapping TypeName="Model.Employee">
         <MappingFragment StoreEntitySet="Employee">
-          <ScalarProperty Name="StatusEmployee" ColumnName="StatusEmployee" />
           <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
           <ScalarProperty Name="FirstNameEmployee" ColumnName="FirstNameEmployee" />
           <ScalarProperty Name="LastNameEmployee" ColumnName="LastNameEmployee" />
           <ScalarProperty Name="IdPosition" ColumnName="IdPosition" />
+          <ScalarProperty Name="StatusEmployee" ColumnName="StatusEmployee" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -75,14 +76,15 @@
           <ScalarProperty Name="IdIntersted" ColumnName="IdIntersted" />
           <ScalarProperty Name="FirstNameIntersted" ColumnName="FirstNameIntersted" />
           <ScalarProperty Name="LastNameIntersted" ColumnName="LastNameIntersted" />
-          <ScalarProperty Name="TzIntersted" ColumnName="TzIntersted" />
+          <ScalarProperty Name="TzInterested" ColumnName="TzInterested" />
           <ScalarProperty Name="GmailIntersted" ColumnName="GmailIntersted" />
-          <ScalarProperty Name="CellIntersted" ColumnName="CellIntersted" />
+          <ScalarProperty Name="CellInterested" ColumnName="CellInterested" />
           <ScalarProperty Name="IdResource" ColumnName="IdResource" />
           <ScalarProperty Name="IdFaculty" ColumnName="IdFaculty" />
           <ScalarProperty Name="IdDiploma" ColumnName="IdDiploma" />
           <ScalarProperty Name="IdPersonStatus" ColumnName="IdPersonStatus" />
           <ScalarProperty Name="IdCollege" ColumnName="IdCollege" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -195,6 +197,15 @@
           <ScalarProperty Name="Comment" ColumnName="Comment" />
           <ScalarProperty Name="IsArrival" ColumnName="IsArrival" />
           <ScalarProperty Name="Reminder" ColumnName="Reminder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

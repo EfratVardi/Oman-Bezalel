@@ -7,3 +7,11 @@ C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.csproj.GenerateResource.Ca
 C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.csproj.CoreCompileInputs.cache
 C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.exe
 C:\Users\hand\Desktop\oman-batzalel\Gui\obj\Debug\Gui.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\bin\Debug\Gui.exe.config
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\bin\Debug\Gui.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\bin\Debug\Gui.pdb
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\obj\Debug\Gui.csprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\obj\Debug\Gui.Properties.Resources.resources
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\obj\Debug\Gui.csproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\obj\Debug\Gui.exe
+C:\Users\אפרת ורדי\Desktop\אלישבע ואפרת\oman-batzalel\Gui\obj\Debug\Gui.pdb

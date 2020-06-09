@@ -25,14 +25,15 @@ namespace Dal
         public int IdIntersted { get; set; }
         public string FirstNameIntersted { get; set; }
         public string LastNameIntersted { get; set; }
-        public string TzIntersted { get; set; }
+        public string TzInterested { get; set; }
         public string GmailIntersted { get; set; }
-        public string CellIntersted { get; set; }
+        public string CellInterested { get; set; }
         public Nullable<int> IdResource { get; set; }
         public Nullable<int> IdFaculty { get; set; }
         public Nullable<int> IdDiploma { get; set; }
         public Nullable<int> IdPersonStatus { get; set; }
         public Nullable<int> IdCollege { get; set; }
+        public Nullable<int> IdUser { get; set; }
     
         public virtual College College { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -43,6 +44,7 @@ namespace Dal
         public virtual Resource Resource { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PLogging> PLogging { get; set; }
+        public virtual User User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VLogging> VLogging { get; set; }
     }
