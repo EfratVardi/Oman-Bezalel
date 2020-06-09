@@ -9,7 +9,7 @@ namespace Dto
     public class EmployeeDto
     {
 
-    
+    //הי!!!! כנראה הצלחנו......
         public int IdEmployee { get; set; }
         public string FirstNameEmployee { get; set; }
         public string LastNameEmployee { get; set; }
