@@ -30,7 +30,7 @@ namespace Converters
                 en.IdEmployee = e.IdEmployee;
                 en.IdPosition = e.IdPosition;
                 en.LastNameEmployee = e.LastNameEmployee;
-                en.UserId = e.UserId;
+                en.UserId= e.UserId;
                 return en;
             }
 
